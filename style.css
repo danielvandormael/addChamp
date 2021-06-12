@@ -35,8 +35,7 @@ textarea {
 }
 
 .championship-form{
-  background-color: rgb(0, 0, 0);
-  opacity: 0.7;
+  background-color: rgb(0, 0, 0, 0.7);
 }
 
 .championship-demo {
