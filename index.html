@@ -19,6 +19,16 @@
             <label for="">Nome do Campeonato</label>
             <span>Nome do Campeonato</span>
           </div>
+          <div class="input-container color">
+            <input type="text" id="org-input" name="organizador" class="input" onkeyup="send('org-input', 'organizador')"/>
+            <label for="">Organizador</label>
+            <span>Organizador</span>
+          </div>
+          <div class="input-container">
+            <input type="color" id="org-input" name="organizador" class="input color" onkeyup="send('org-input', 'organizador')"/>
+            <label for="">Organizador</label>
+            <span>Organizador</span>
+          </div>
           <div class="input-container file">
             <input type="file" id="file-input" name="myImage" accept="image/*" class="input" />
             <label for="">Imagem Carta</label>
@@ -26,11 +36,6 @@
           <div class="input-container file">
             <input type="file" name="myImage" accept="image/*" class="input" />
             <label for="">Imagem detalhes</label>
-          </div>
-          <div class="input-container">
-            <input type="text" id="org-input" name="organizador" class="input" onkeyup="send('org-input', 'organizador')"/>
-            <label for="">Organizador</label>
-            <span>Organizador</span>
           </div>
           <div class="input-container int">
             <input type="text" id="pay-input" name="pagamento" class="input" onkeyup="send('pay-input', 'pay')"/>
@@ -85,80 +90,82 @@
           <input type="submit" value="Send" class="btn" />
         </div>
 
-        <div class="championship-demo">
+        <div class="championship-demo" id="championship-demo">
           <form action="index.html" autocomplete="off">
             <h3 class="title">Cartão Demo</h3>
-            <div class="card">
-              <div class="cardImage" id="cardImage">
-                <br><br><br><br><br>
-                <span class="card-image-demo-text">Image Preview</span>
-              </div>
-              <div class="card-text">
-                <h2 id="nome" class="title">Titulo</h2>
-                <h1 id="organizador" class="subtitle">Organizador</h1>
-                <div class="information">
-                  <img src="img/gold.svg" alt="" class="icon">
-                    <p id="first" a></p>
+            <div class="card-display">
+              <div class="card">
+                <div class="cardImage" id="cardImage">
+                  <br><br><br><br><br>
+                  <span class="card-image-demo-text">Image Preview</span>
                 </div>
-                <div class="information">
-                  <img src="img/silver.svg" alt="" class="icon">
-                  <p id="second"></p>
-                </div>
-                <div class="information">
-                  <img src="img/bronze.svg" alt="" class="icon">
-                  <p id="third" ></p>
-                </div>
-              </div>
-              <div class="card-stats">
-                <div class="stat">
-                  <div class="value" id="fim">00/00/0000</div>
-                  <div class="type">Fim de Incrições</div>
-                </div>
-                <div class="stat border-left">
-                  <div class="value" id="vagas">0</div>
-                  <div class="type">Vagas</div>
-                </div>
-                <div class="stat border-right">
-                  <div class="value" id="price">R$ 0</div>
-                  <div class="type">Taxa</div>
-                </div>
-                <div class="stat">
-                  <div class="value" id="inicio">00/00/0000</div>
-                  <div class="type">Incio do torneio</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-small">
-              <div class="cardImage" id="cardImage2">
-                <div class="card-text layered">
-                  <h2 id="nome2" class="title">Titulo</h2>
-                  <h1 id="organizador2" class="subtitle">Organizador</h1>
-                  <br><br>
-                  <div class="information small">
+                <div class="card-text">
+                  <h2 id="nome" class="title">Titulo</h2>
+                  <h1 id="organizador" class="subtitle">Organizador</h1>
+                  <div class="information">
                     <img src="img/gold.svg" alt="" class="icon">
-                    <div class="temp">
-                      <p id="first2" ></p>
-                    </div>
+                      <p id="first" a></p>
+                  </div>
+                  <div class="information">
+                    <img src="img/silver.svg" alt="" class="icon">
+                    <p id="second"></p>
+                  </div>
+                  <div class="information">
+                    <img src="img/bronze.svg" alt="" class="icon">
+                    <p id="third" ></p>
+                  </div>
+                </div>
+                <div class="card-stats">
+                  <div class="stat outer">
+                    <div class="value" id="fim">00/00/0000</div>
+                    <div class="type">Fim de Incrições</div>
+                  </div>
+                  <div class="stat border-left">
+                    <div class="value" id="vagas">0</div>
+                    <div class="type">Vagas</div>
+                  </div>
+                  <div class="stat border-right">
+                    <div class="value" id="price">R$ 0</div>
+                    <div class="type">Taxa</div>
+                  </div>
+                  <div class="stat outer">
+                    <div class="value" id="inicio">00/00/0000</div>
+                    <div class="type">Incio do torneio</div>
                   </div>
                 </div>
               </div>
-              <div class="card-stats">
-                <div class="stat">
-                  <div class="value" id="fim2">00/00/0000</div>
-                  <div class="type">Fim de Incrições</div>
+  
+              <div class="card small">
+                <div class="cardImage" id="cardImage2">
+                  <div class="card-text layered">
+                    <h2 id="nome2" class="title">Titulo</h2>
+                    <h1 id="organizador2" class="subtitle">Organizador</h1>
+                    <br><br>
+                    <div class="information small">
+                      <img src="img/gold.svg" alt="" class="icon">
+                      <div class="temp">
+                        <p id="first2" ></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="stat border-left">
-                  <div class="value" id="vagas2">0</div>
-                  <div class="type">Vagas</div>
-                </div>
-                <div class="stat border-right">
-                  <div class="value" id="price2">R$ 0</div>
-                  <div class="type">Taxa</div>
-                </div>
-                <div class="stat">
-                  <div class="value" id="inicio2">00/00/0000</div>
-                  <div class="type">Incio do torneio</div>
+                <div class="card-stats">
+                  <div class="stat outer">
+                    <div class="value" id="fim2">00/00/0000</div>
+                    <div class="type">Fim de Incrições</div>
+                  </div>
+                  <div class="stat border-left">
+                    <div class="value" id="vagas2">0</div>
+                    <div class="type">Vagas</div>
+                  </div>
+                  <div class="stat border-right">
+                    <div class="value" id="price2">R$ 0</div>
+                    <div class="type">Taxa</div>
+                  </div>
+                  <div class="stat outer">
+                    <div class="value" id="inicio2">00/00/0000</div>
+                    <div class="type">Incio do torneio</div>
+                  </div>
                 </div>
               </div>
             </div>

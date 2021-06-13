@@ -35,7 +35,8 @@ textarea {
 }
 
 .championship-form{
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
 }
 
 .championship-demo {
@@ -48,6 +49,11 @@ form {
   z-index: 10;
   overflow: hidden;
   position: relative;
+}
+
+.card-display{
+  display:block; 
+  align-items:center;
 }
 
 .title {
@@ -75,6 +81,10 @@ form {
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
+}
+
+.input.color{
+  display: none;
 }
 
 textarea.input {
@@ -220,7 +230,7 @@ textarea.input {
 
 .card {
   display: grid;
-  grid-template-columns: 300px;
+  width: 300px;
   grid-template-rows: 210px 210px 80px;
   grid-template-areas: "image" "text" "stats";
   border-radius: 18px;
@@ -233,7 +243,7 @@ textarea.input {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-inline: auto;
-  max-width: 300px;
+
 }
 
 .card-image {
@@ -344,22 +354,11 @@ textarea.input {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
-.card-small {
+.card.small {
   display: grid;
-  grid-template-columns: 300px;
   grid-template-rows: 170px 80px;
+  height: 250px;
   grid-template-areas: "image" "stats";
-  border-radius: 18px;
-  background: #201316;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: roboto;
-  text-align: center;
-  transition: 0.5s ease;
-  cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-inline: auto;
-  max-width: 300px;
 }
 
 
@@ -396,7 +395,6 @@ textarea.input {
     left: initial;
     right: 70px;
   }
-
   .square {
     transform: translate(140%, 43%);
     height: 350px;
@@ -443,5 +441,39 @@ textarea.input {
 
   .btn {
     padding: 0.45rem 1.2rem;
+  }
+
+  .card{
+    width: 250px;
+  }
+
+  .card-stats{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-stats .outer{
+    display: none;
+  }
+
+  .card-stats .border-left {
+    border-right: 1px solid rgb(121, 23, 23);
+  }
+}
+
+@media (min-width: 790px) and (max-width:1000px) {
+  .card-display{
+    display: flex;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1450px) {
+  .card-display{
+    display: block;
+  }
+}
+
+@media (min-width: 1450px) {
+  .card-display{
+    display: flex;
   }
 }

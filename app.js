@@ -41,6 +41,10 @@ function send(idInput, idOutput) {
       document.getElementById("price2").innerHTML = text;
     }else if(idOutput == "first"){
       document.getElementById("first2").innerHTML = text;
+    }else if(idOutput == "pay"){
+      const previewContainer1 = document.getElementById("championship-demo");
+      const previewDefaultText1 = previewContainer1.querySelector(".disc-title");
+      previewDefaultText1.style.display = null;
     }
   }else{
     if(idOutput == "price"){
@@ -66,7 +70,7 @@ function send(idInput, idOutput) {
     }else if(idOutput == "pay"){
       const previewContainer1 = document.getElementById("championship-demo");
       const previewDefaultText1 = previewContainer1.querySelector(".disc-title");
-      previewDefaultText1.style.display = "";
+      previewDefaultText1.style.display = "block";
     }
   }
 
