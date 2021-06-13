@@ -106,3 +106,26 @@ function isNumber(evt) {
   }
   return true;
 }
+
+function changeColor(input){
+  if(input == "main"){
+    let color = document.getElementById('clr1-input'). value;
+    document.getElementById("nome").style.color = color;
+    document.getElementById("nome2").style.color = color;
+    document.getElementById("card-stats").style.background = color;
+    document.getElementById("card-stats2").style.background = color;
+  }else{
+    let color = document.getElementById('clr2-input'). value;
+    document.getElementById("stat1").style.color = color;
+    document.getElementById("stat2").style.color = color;
+    document.getElementById("stat3").style.color = color;
+    document.getElementById("stat4").style.color = color;
+    document.getElementById("stat5").style.color = color;
+    document.getElementById("stat6").style.color = color;
+    document.getElementById("stat7").style.color = color;
+    document.getElementById("stat8").style.color = color;
+    console.log("here")
+  }
+  
+
+}

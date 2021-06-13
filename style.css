@@ -83,8 +83,8 @@ form {
   transition: 0.3s;
 }
 
-.input.color{
-  display: none;
+input[type="color"] {
+	min-height: 50px;
 }
 
 textarea.input {
@@ -197,6 +197,16 @@ textarea.input {
   margin: 0;
 }
 
+.input-container.file.color{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.part{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .championship-form {
   padding: 2.3rem 2.2rem;
   position: relative;
@@ -302,7 +312,7 @@ textarea.input {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: rgb(255, 0, 0);
+  background-image: rgb(255, 0, 0);
 }
 
 .card-stats .border-left {
@@ -314,7 +324,7 @@ textarea.input {
   border-right: 1px solid rgb(121, 23, 23);
 }
 
-.card-stats .stat {
+.stat{
   display: flex;
   align-items: center;
   justify-content: center;

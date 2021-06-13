@@ -19,15 +19,20 @@
             <label for="">Nome do Campeonato</label>
             <span>Nome do Campeonato</span>
           </div>
-          <div class="input-container color">
+          <div class="input-container">
             <input type="text" id="org-input" name="organizador" class="input" onkeyup="send('org-input', 'organizador')"/>
             <label for="">Organizador</label>
             <span>Organizador</span>
           </div>
-          <div class="input-container">
-            <input type="color" id="org-input" name="organizador" class="input color" onkeyup="send('org-input', 'organizador')"/>
-            <label for="">Organizador</label>
-            <span>Organizador</span>
+          <div class="input-container file color">
+            <div class="part"><input type="color" id="clr1-input" name="clr1" class="input" onchange="changeColor('main')"/>
+              <label for="">Cor Titulo & Carta</label>
+              <span>Cor Titulo & Carta</span>
+            </div>
+            <div class="part"><input type="color" id="clr2-input" name="clr2" class="input" onchange="changeColor()"/>
+              <label for="">Cor Texto</label>
+              <span>Cor Texto</span>
+            </div>
           </div>
           <div class="input-container file">
             <input type="file" id="file-input" name="myImage" accept="image/*" class="input" />
@@ -115,20 +120,20 @@
                     <p id="third" ></p>
                   </div>
                 </div>
-                <div class="card-stats">
-                  <div class="stat outer">
+                <div class="card-stats" id="card-stats">
+                  <div class="stat outer" id="stat5">
                     <div class="value" id="fim">00/00/0000</div>
                     <div class="type">Fim de Incrições</div>
                   </div>
-                  <div class="stat border-left">
+                  <div class="stat border-left" id="stat6">
                     <div class="value" id="vagas">0</div>
                     <div class="type">Vagas</div>
                   </div>
-                  <div class="stat border-right">
+                  <div class="stat border-right" id="stat7">
                     <div class="value" id="price">R$ 0</div>
                     <div class="type">Taxa</div>
                   </div>
-                  <div class="stat outer">
+                  <div class="stat outer" id="stat8">
                     <div class="value" id="inicio">00/00/0000</div>
                     <div class="type">Incio do torneio</div>
                   </div>
@@ -149,20 +154,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-stats">
-                  <div class="stat outer">
+                <div class="card-stats" id="card-stats2">
+                  <div class="stat outer" id="stat1">
                     <div class="value" id="fim2">00/00/0000</div>
                     <div class="type">Fim de Incrições</div>
                   </div>
-                  <div class="stat border-left">
+                  <div class="stat border-left"  id="stat2">
                     <div class="value" id="vagas2">0</div>
                     <div class="type">Vagas</div>
                   </div>
-                  <div class="stat border-right">
+                  <div class="stat border-right"  id="stat3">
                     <div class="value" id="price2">R$ 0</div>
                     <div class="type">Taxa</div>
                   </div>
-                  <div class="stat outer">
+                  <div class="stat outer"  id="stat4">
                     <div class="value" id="inicio2">00/00/0000</div>
                     <div class="type">Incio do torneio</div>
                   </div>
