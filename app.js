@@ -124,7 +124,6 @@ function changeColor(input){
     document.getElementById("stat6").style.color = color;
     document.getElementById("stat7").style.color = color;
     document.getElementById("stat8").style.color = color;
-    console.log("here")
   }
   
 

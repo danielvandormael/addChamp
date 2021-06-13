@@ -312,7 +312,7 @@ textarea.input {
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-image: rgb(255, 0, 0);
+  background: rgb(255, 0, 0);
 }
 
 .card-stats .border-left {
